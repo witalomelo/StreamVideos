@@ -1,0 +1,61 @@
+.row-container {
+    margin-left: 20px;
+    color: white;
+  }
+  
+  .row-cards {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+  }
+  
+  .row-cards::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .movie-card {
+    object-fit: contain;
+    width: 100%;
+    max-height: 250px;
+    margin-bottom: 10px;
+    transition: transform 450ms;
+  }
+  
+  .movie-card-large {
+    object-fit: contain;
+    width: 100%;
+    max-height: 300px;
+    margin-bottom: 10px;
+    transition: transform 450ms;
+  }
+  
+  .movie-card:hover {
+    transform: scale(1.08);
+  }
+
+
+.row-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px; /* Ajuste conforme necessário */
+
+
+  button {
+    background-color: orange; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+   
+  }
+
+  /* Estilo quando o cursor passa sobre o botão */
+  button:hover {
+    background-color: #2980b9; /* Cor de fundo ao passar o cursor */
+  }
+}
